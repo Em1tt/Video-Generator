@@ -30,6 +30,7 @@ node index.js
     "aspect": "16:9",
     "showAuthors": true,
     "cleanCache": true,
-    "silent": false
+    "silent": false,
+    "ignoreFlairs": ["Discussion"]
 }
 ```

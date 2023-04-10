@@ -8,7 +8,8 @@ const {
   aspect,
   showAuthors,
   cleanCache,
-  silent
+  silent,
+  ignoreFlairs
 } = require("./config.json");
 const fetch = (...args) =>
   import("node-fetch").then(({ default: fetch }) => fetch(...args));
@@ -32,12 +33,14 @@ let after = null;
         if (post.data.is_video && post.data.is_reddit_media_domain) return true;
       });
       for (const post of posts) {
-        if (videos.length > amount) break;
+        if (videos.length > amount-1) break;
+        if (ignoreFlairs.includes(post.data?.link_flair_text)) break;
         const id = post.data?.url_overridden_by_dest?.split(".it/")[1];
         const videoURL = post.data.media?.reddit_video.fallback_url;
         const audioURL = `https://v.redd.it/${id}/DASH_audio.mp4?source=fallback`;
         silent ? 0 : console.log(`STARTED VIDEO: ${id}.mp4`);
         const author = `u/${post.data.author}`;
+
         await processVideoSync(videoURL, audioURL, id, author);
       }
     });
