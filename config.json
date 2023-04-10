@@ -1,5 +1,12 @@
 {
     "subreddit": "escapefromtarkov",
     "filter": "top",
-    "outputDir": ""
+    "outputDir": "",
+    "tmpDir": "./tmp/",
+    "amount": 25,
+    "resolution": "1920x?",
+    "aspect": "16:9",
+    "showAuthors": true,
+    "cleanCache": true,
+    "silent": false
 }
