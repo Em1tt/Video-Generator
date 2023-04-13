@@ -1,5 +1,7 @@
 tmp
 
+*.mp4
+
 # Logs
 logs
 *.log
