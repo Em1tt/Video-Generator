@@ -8,6 +8,8 @@ To start using this utility, run:
 npm install
 ```
 
+create a `tmp` folder
+
 **Make sure your device has FFmpeg installed on it**  
 Not sure how to install FFmpeg? [[Windows]](https://phoenixnap.com/kb/ffmpeg-windows) [[Linux]](https://phoenixnap.com/kb/install-ffmpeg-ubuntu)
 
