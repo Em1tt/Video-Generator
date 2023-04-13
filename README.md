@@ -2,7 +2,7 @@
 
 This utility fetches videos from a preconfigured subreddit, and creates a compilation out of them. It utilizes a queue system, which helps prevent lag on your device.
 
-To start using this utility, run:
+**To start using this utility, run:**
 
 ```bash
 npm install
