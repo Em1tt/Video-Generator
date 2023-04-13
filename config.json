@@ -1,13 +1,23 @@
 {
-    "subreddit": "escapefromtarkov",
-    "filter": "top",
-    "outputDir": "",
-    "tmpDir": "./tmp/",
-    "amount": 25,
-    "resolution": "1920x?",
-    "aspect": "16:9",
-    "showAuthors": true,
-    "cleanCache": true,
-    "silent": false,
-    "ignoreFlairs": ["Discussion"]
+    "dirs": {
+        "output": "",
+        "tmp": "./tmp/"
+    },
+    "input": {
+        "subreddit": "escapefromtarkov",
+        "sort": "top",
+        "videos": 6,
+        "ignoreFlairs": ["Discussion"],
+        "query": "t=week"
+    },
+    "output": {
+        "resolution": "1920x?",
+        "aspect": "16:9",
+        "showAuthors": true,
+        "fileName": "output"
+    },
+    "settings": {
+        "cleanCache": false,
+        "silent": false
+    }
 }
