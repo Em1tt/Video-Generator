@@ -1,5 +1,8 @@
 # Video Compilation Generator
 
+🗃️ This repository is archived:
+Reddit changed its API, breaking this code. I will create a similar program for Discord soon.
+
 This utility fetches videos from a preconfigured subreddit, and creates a compilation out of them. It utilizes a queue system, which helps prevent lag on your device.
 
 **To start using this utility, run:**
